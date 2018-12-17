@@ -1,1 +1,3 @@
-{"presets":["@travi"]}
+{
+  "presets": ["es2015-node", "react"]
+}

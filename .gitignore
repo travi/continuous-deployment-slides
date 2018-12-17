@@ -4,3 +4,4 @@
 /.nyc_output/
 
 .eslintcache
+webpack-assets.json
