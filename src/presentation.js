@@ -27,8 +27,8 @@ preloader(images);
 
 const notesForFatigue = 'There has been a lot said about JS Fatigue lately... Node Community is known for lots of ' +
   'small packages. This, plus the frequency of updates contributes to fatigue';
-const notesForInternalPackagesSlide = "If managing thirdparty dependencies in your app isn't enough, lets take a look" +
-  ' at how we can handle internal packages.';
+const notesForInternalPackagesSlide = 'If managing thirdparty dependencies in your app isn\'t enough, lets take a ' +
+  'look at how we can handle internal packages.';
 const notesForCommitizen = 'https://github.com/conventional-changelog-archived-repos/conventional-changelog-angular/' +
   'blob/e32d954eac0766916b9b7408efed95d643a198a9/convention.md';
 
@@ -44,20 +44,46 @@ export default function Presentation() {
         <Heading size={1} fit>
           of npm packages
         </Heading>
-        <Text textSize="1em" margin="40px 0px 0px" bold>Matt Travi</Text>
+        <Text textSize="1em" margin="40px 0px 0px" bold>
+          Matt Travi
+        </Text>
       </Slide>
       <Slide bgColor="black" transition={['slide']}>
-        <Heading size={1} fit textColor="primary" caps>Payoff from Automated Testing Practices</Heading>
+        <Heading size={1} fit textColor="primary" caps>
+          Payoff from Automated Testing Practices
+        </Heading>
         <List textColor="white">
-          <Appear><ListItem>Automate to give confidence</ListItem></Appear>
-          <Appear><ListItem>Easy to question ROI of automated testing practices</ListItem></Appear>
-          <Appear><ListItem>I hope to show a big potential payoff</ListItem></Appear>
-          <Appear><ListItem>Only do this with enough automated coverage for confidence</ListItem></Appear>
-          <Appear><ListItem>The payoff can be valuable to increase your coverage</ListItem></Appear>
+          <Appear>
+            <ListItem>
+              Automate to give confidence
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Easy to question ROI of automated testing practices
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              I hope to show a big potential payoff
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Only do this with enough automated coverage for confidence
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              The payoff can be valuable to increase your coverage
+            </ListItem>
+          </Appear>
         </List>
       </Slide>
       <Slide bgColor="black" transition={['slide']} notes={notesForFatigue}>
-        <Heading size={1} fit>JS Fatigue</Heading>
+        <Heading size={1} fit>
+          JS Fatigue
+        </Heading>
       </Slide>
       <Slide bgColor="black" transition={['slide']}>
         <Heading size={1} fit>
@@ -65,11 +91,25 @@ export default function Presentation() {
         </Heading>
       </Slide>
       <Slide transition={['slide']}>
-        <Heading size={1} fit>First, some terminology...</Heading>
+        <Heading size={1} fit>
+          First, some terminology...
+        </Heading>
         <List>
-          <Appear><ListItem>Continuous Integration</ListItem></Appear>
-          <Appear><ListItem>Continuous Delivery</ListItem></Appear>
-          <Appear><ListItem>Continuous Deployment</ListItem></Appear>
+          <Appear>
+            <ListItem>
+              Continuous Integration
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Continuous Delivery
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Continuous Deployment
+            </ListItem>
+          </Appear>
         </List>
       </Slide>
       <Slide bgColor="black" transition={['slide']}>
@@ -77,7 +117,13 @@ export default function Presentation() {
           Continuous Integration
         </Heading>
         <Heading size={1} fit>
-          favoring code in <Code textColor="white">master</Code> over long-lived branches
+          favoring code in
+          {' '}
+          <Code textColor="white">
+            master
+          </Code>
+          {' '}
+          over long-lived branches
         </Heading>
       </Slide>
       <Slide bgColor="black" transition={['slide']}>
@@ -85,7 +131,11 @@ export default function Presentation() {
           Continuous Delivery
         </Heading>
         <Heading size={1} fit>
-          <Code textColor="white">master</Code> is always deployable
+          <Code textColor="white">
+            master
+          </Code>
+          {' '}
+          is always deployable
         </Heading>
       </Slide>
       <Slide bgColor="black" transition={['slide']}>
@@ -93,7 +143,11 @@ export default function Presentation() {
           Continuous Deployment
         </Heading>
         <Heading size={1} fit>
-          <Code textColor="white">master</Code> means production
+          <Code textColor="white">
+            master
+          </Code>
+          {' '}
+          means production
         </Heading>
       </Slide>
       <Slide transition={['zoom']}>
@@ -111,7 +165,9 @@ export default function Presentation() {
         <Heading size={2} caps fit textColor="primary" textFont="primary">
           Trust your test suite
         </Heading>
-        <Text textSize="1em" margin="20px 0px 0px" bold>Confidently deploy without human intervention</Text>
+        <Text textSize="1em" margin="20px 0px 0px" bold>
+          Confidently deploy without human intervention
+        </Text>
       </Slide>
       <CodeSlide
         textSize=".8em"
@@ -142,10 +198,26 @@ export default function Presentation() {
           Travis CI
         </Heading>
         <List textColor="white">
-          <Appear><ListItem>Tight integration with GitHub</ListItem></Appear>
-          <Appear><ListItem>Strongly encourages continuous deployment</ListItem></Appear>
-          <Appear><ListItem>Config is versioned with the project</ListItem></Appear>
-          <Appear><ListItem>CD by default on Travis, but any CI server could be configured this way</ListItem></Appear>
+          <Appear>
+            <ListItem>
+              Tight integration with GitHub
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Strongly encourages continuous deployment
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Config is versioned with the project
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              CD by default on Travis, but any CI server could be configured this way
+            </ListItem>
+          </Appear>
         </List>
       </Slide>
       <CodeSlide
@@ -162,8 +234,12 @@ export default function Presentation() {
         ]}
       />
       <Slide transition={['zoom']}>
-        <Heading size={1} caps fit textFont="primary">Keeping Application Dependencies</Heading>
-        <Heading size={2} caps fit textFont="primary">Up to Date</Heading>
+        <Heading size={1} caps fit textFont="primary">
+          Keeping Application Dependencies
+        </Heading>
+        <Heading size={2} caps fit textFont="primary">
+          Up to Date
+        </Heading>
       </Slide>
       <Slide
         bgColor="white"
@@ -173,9 +249,21 @@ export default function Presentation() {
         transition={['slide']}
       >
         <List>
-          <Appear><ListItem>React (for example) publishes a new version to npm</ListItem></Appear>
-          <Appear><ListItem>Greenkeeper sends a PR to your application&apos;s repo</ListItem></Appear>
-          <Appear><ListItem>If all goes well, you only have to click merge</ListItem></Appear>
+          <Appear>
+            <ListItem>
+              React (for example) publishes a new version to npm
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Greenkeeper sends a PR to your application&apos;s repo
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              If all goes well, you only have to click merge
+            </ListItem>
+          </Appear>
         </List>
       </Slide>
       <Slide bgColor="white">
@@ -196,14 +284,39 @@ export default function Presentation() {
         <ImageSlide title="A common day of PRs" image={images.lotsOfPrs.replace('/', '')} />
       </Slide>
       <Slide bgColor="black" transition={['slide']}>
-        <Heading size={2} caps fit textColor="primary" textFont="primary">Greenkeeper-keeper</Heading>
+        <Heading size={2} caps fit textColor="primary" textFont="primary">
+          Greenkeeper-keeper
+        </Heading>
         <List textColor="white">
-          <Appear><ListItem>PR verified to be from Greenkeeper</ListItem></Appear>
-          <Appear><ListItem>Commit statuses all pass</ListItem></Appear>
-          <Appear><ListItem>PR merged</ListItem></Appear>
-          <Appear><ListItem>Branch automatically deleted</ListItem></Appear>
           <Appear>
-            <ListItem>Commit to <Code textColor="white">master</Code> triggers production deploy</ListItem>
+            <ListItem>
+              PR verified to be from Greenkeeper
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Commit statuses all pass
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              PR merged
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Branch automatically deleted
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Commit to
+              <Code textColor="white">
+                master
+              </Code>
+              {' '}
+              triggers production deploy
+            </ListItem>
           </Appear>
         </List>
       </Slide>
@@ -214,11 +327,25 @@ export default function Presentation() {
         />
       </Slide>
       <Slide bgColor="black" transition={['slide']}>
-        <Heading size={2} caps fit textColor="primary" textFont="primary">Caveats</Heading>
+        <Heading size={2} caps fit textColor="primary" textFont="primary">
+          Caveats
+        </Heading>
         <List textColor="white">
-          <Appear><ListItem>Greenkeeper is a GitHub (only) integration</ListItem></Appear>
-          <Appear><ListItem>No developer to look at the execution before pushing</ListItem></Appear>
-          <Appear><ListItem>Unit tests alone might not provide enough confidence</ListItem></Appear>
+          <Appear>
+            <ListItem>
+              Greenkeeper is a GitHub (only) integration
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              No developer to look at the execution before pushing
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Unit tests alone might not provide enough confidence
+            </ListItem>
+          </Appear>
         </List>
       </Slide>
       <Slide transition={['zoom']}>
@@ -240,15 +367,38 @@ export default function Presentation() {
         <List textColor="white">
           <Appear>
             <ListItem>
-              Change is in <Code textColor="white">master</Code> of the package repo&#63;
+              Change is in
+              {' '}
+              <Code textColor="white">
+                master
+              </Code>
+              {' '}
+              of the package repo&#63;
             </ListItem>
           </Appear>
-          <Appear><ListItem>New version of package published&#63;</ListItem></Appear>
-          <Appear><ListItem>Updated in consuming apps&#63;</ListItem></Appear>
-          <Appear><ListItem>Consuming apps deployed&#63;</ListItem></Appear>
           <Appear>
             <ListItem>
-              How could we apply &quot;<Code textColor="white">master</Code> means production&quot;&#63;
+              New version of package published&#63;
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Updated in consuming apps&#63;
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Consuming apps deployed&#63;
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              How could we apply &quot;
+              <Code textColor="white">
+                master
+              </Code>
+              {' '}
+              means production&quot;&#63;
             </ListItem>
           </Appear>
         </List>
@@ -258,9 +408,21 @@ export default function Presentation() {
           Traditional Road Blocks
         </Heading>
         <List textColor="white">
-          <Appear><ListItem>Bundling changes into a release</ListItem></Appear>
-          <Appear><ListItem>Limiting major/breaking releases</ListItem></Appear>
-          <Appear><ListItem>Updating and deploying the consuming application</ListItem></Appear>
+          <Appear>
+            <ListItem>
+              Bundling changes into a release
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Limiting major/breaking releases
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Updating and deploying the consuming application
+            </ListItem>
+          </Appear>
         </List>
       </Slide>
       <Slide bgColor="black" transition={['slide']}>
@@ -268,10 +430,26 @@ export default function Presentation() {
           Semantic-Release
         </Heading>
         <List textColor="white">
-          <Appear><ListItem>Determines the previously released version from the registry</ListItem></Appear>
-          <Appear><ListItem>Bumps the version based on commit messages</ListItem></Appear>
-          <Appear><ListItem>Publishes to the registry</ListItem></Appear>
-          <Appear><ListItem>Pushes the tag and release notes to GitHub</ListItem></Appear>
+          <Appear>
+            <ListItem>
+              Determines the previously released version from the registry
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Bumps the version based on commit messages
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Publishes to the registry
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Pushes the tag and release notes to GitHub
+            </ListItem>
+          </Appear>
         </List>
       </Slide>
       <Slide bgColor="black" transition={['slide']}>
@@ -279,25 +457,48 @@ export default function Presentation() {
           Patch, feature, breakage
         </Heading>
         <List textColor="white">
-          <Appear><ListItem><Code textColor="white">fix</Code></ListItem></Appear>
-          <Appear><ListItem><Code textColor="white">feat</Code></ListItem></Appear>
-          <Appear><ListItem><Code textColor="white">BREAKING CHANGE: </Code></ListItem></Appear>
+          <Appear>
+            <ListItem>
+              <Code textColor="white">
+                fix
+              </Code>
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              <Code textColor="white">
+                feat
+              </Code>
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              <Code textColor="white">
+                BREAKING CHANGE:
+                {' '}
+              </Code>
+            </ListItem>
+          </Appear>
         </List>
       </Slide>
       <Slide transition={['slide']}>
-        <Heading size={1} fit>Formatting the Commit for Semantic-Release</Heading>
-        <Heading size={2} fit>Can Be Complex</Heading>
+        <Heading size={1} fit>
+          Formatting the Commit for Semantic-Release
+        </Heading>
+        <Heading size={2} fit>
+          Can Be Complex
+        </Heading>
       </Slide>
       <CodeSlide
         lang="json"
         code={require('../assets/package.npm.example')}
         ranges={[
           {
-            loc: [16, 17],
+            loc: [15, 16],
             title: 'commitizen'
           },
           {
-            loc: [27, 30],
+            loc: [26, 29],
             note: 'provides a wizard to simplify matching the expected commit pattern',
             title: 'commitizen'
           }
@@ -310,139 +511,313 @@ export default function Presentation() {
         <Terminal
           title="~/development/gain/front-end/react-components @ Travi-MBP"
           output={[
-            <Typist cursor={cursor} key="cz command">git cz</Typist>,
+            <Typist cursor={cursor} key="cz command">
+              git cz
+            </Typist>,
             [
               <div key="inital cz step">
-                <div>cz-cli@2.9.5, cz-conventional-changelog@2.0.0</div>
+                <div>
+                  cz-cli@2.9.5, cz-conventional-changelog@2.0.0
+                </div>
 
                 <div style={{padding: '40px 0 20px 0'}}>
                   Line 1 will be cropped at 100 characters. All other lines will be wrapped after 100 characters.
                 </div>
                 <div>
-                  <span style={{color: '#00ff00'}}>&#63;</span> Select the type of change that you&apos;re committing:
+                  <span style={{color: '#00ff00'}}>
+&#63;
+                  </span>
+                  {' '}
+                  Select the type of change that you&apos;re committing:
                   (Use arrow keys)
                 </div>
-                <div style={{color: '#00afff'}}>❯ feat: A new feature</div>
-                <div>&nbsp;&nbsp;fix: A bug fix</div>
-                <div>&nbsp;&nbsp;docs: Documentation only changes</div>
+                <div style={{color: '#00afff'}}>
+                  ❯ feat: A new feature
+                </div>
+                <div>
+                  &nbsp;&nbsp;fix: A bug fix
+                </div>
+                <div>
+                  &nbsp;&nbsp;docs: Documentation only changes
+                </div>
                 <div>
                   &nbsp;&nbsp;style: Changes that do not affect the meaning of the code (white-space, formatting,
                   missing semi-colons, etc)
                 </div>
-                <div>&nbsp;&nbsp;refactor: A code change that neither fixes a bug nor adds a feature</div>
-                <div>&nbsp;&nbsp;perf: A code change that improves performance</div>
-                <div>&nbsp;&nbsp;test: Adding missing tests or correcting existing tests</div>
-                <div>(Move up and down to reveal more choices)</div>
+                <div>
+                  &nbsp;&nbsp;refactor: A code change that neither fixes a bug nor adds a feature
+                </div>
+                <div>
+                  &nbsp;&nbsp;perf: A code change that improves performance
+                </div>
+                <div>
+                  &nbsp;&nbsp;test: Adding missing tests or correcting existing tests
+                </div>
+                <div>
+                  (Move up and down to reveal more choices)
+                </div>
               </div>,
               <div key="second cz step">
-                <div>cz-cli@2.9.5, cz-conventional-changelog@2.0.0</div>
+                <div>
+                  cz-cli@2.9.5, cz-conventional-changelog@2.0.0
+                </div>
 
                 <div style={{padding: '40px 0 20px 0'}}>
                   Line 1 will be cropped at 100 characters. All other lines will be wrapped after 100 characters.
                 </div>
                 <div>
-                  <span style={{color: '#00ff00'}}>&#63;</span> Select the type of change that you&apos;re committing:
-                  <span style={{color: '#00afff'}}>&nbsp;feat:&nbsp;&nbsp;&nbsp;&nbsp;A new feature</span>
+                  <span style={{color: '#00ff00'}}>
+&#63;
+                  </span>
+                  {' '}
+                  Select the type of change that you&apos;re committing:
+                  <span style={{color: '#00afff'}}>
+&nbsp;feat:&nbsp;&nbsp;&nbsp;&nbsp;A new feature
+                  </span>
                 </div>
                 <div>
-                  <span style={{color: '#00ff00'}}>&#63;</span> Denote the scope of this change ($location, $browser,
+                  <span style={{color: '#00ff00'}}>
+&#63;
+                  </span>
+                  {' '}
+                  Denote the scope of this change ($location, $browser,
                   $compile, etc.):
                 </div>
-                <div><Typist cursor={cursor}>&nbsp;table-component</Typist></div>
+                <div>
+                  <Typist cursor={cursor}>
+                    &nbsp;table-component
+                  </Typist>
+                </div>
               </div>,
               <div key="third cz step">
-                <div>cz-cli@2.9.5, cz-conventional-changelog@2.0.0</div>
+                <div>
+                  cz-cli@2.9.5, cz-conventional-changelog@2.0.0
+                </div>
 
                 <div style={{padding: '40px 0 20px 0'}}>
                   Line 1 will be cropped at 100 characters. All other lines will be wrapped after 100 characters.
                 </div>
                 <div>
-                  <span style={{color: '#00ff00'}}>&#63;</span> Select the type of change that you&apos;re committing:
-                  <span style={{color: '#00afff'}}>&nbsp;feat:&nbsp;&nbsp;&nbsp;&nbsp;A new feature</span>
+                  <span style={{color: '#00ff00'}}>
+&#63;
+                  </span>
+                  {' '}
+                  Select the type of change that you&apos;re committing:
+                  <span style={{color: '#00afff'}}>
+&nbsp;feat:&nbsp;&nbsp;&nbsp;&nbsp;A new feature
+                  </span>
                 </div>
                 <div>
-                  <span style={{color: '#00ff00'}}>&#63;</span> Denote the scope of this change ($location, $browser,
+                  <span style={{color: '#00ff00'}}>
+&#63;
+                  </span>
+                  {' '}
+                  Denote the scope of this change ($location, $browser,
                   $compile, etc.):
                 </div>
-                <div style={{color: '#00afff'}}>&nbsp;table-component</div>
+                <div style={{color: '#00afff'}}>
+                  &nbsp;table-component
+                </div>
                 <div>
-                  <span style={{color: '#00ff00'}}>&#63;</span> Write a short, imperative tense description of the
+                  <span style={{color: '#00ff00'}}>
+&#63;
+                  </span>
+                  {' '}
+                  Write a short, imperative tense description of the
                   change:
                 </div>
-                <div><Typist cursor={cursor}>&nbsp;Add column sort</Typist></div>
+                <div>
+                  <Typist cursor={cursor}>
+                    &nbsp;Add column sort
+                  </Typist>
+                </div>
               </div>,
               <div key="forth cz step">
-                <div>cz-cli@2.9.5, cz-conventional-changelog@2.0.0</div>
+                <div>
+                  cz-cli@2.9.5, cz-conventional-changelog@2.0.0
+                </div>
 
                 <div style={{padding: '40px 0 20px 0'}}>
                   Line 1 will be cropped at 100 characters. All other lines will be wrapped after 100 characters.
                 </div>
                 <div>
-                  <span style={{color: '#00ff00'}}>&#63;</span> Select the type of change that you&apos;re committing:
-                  <span style={{color: '#00afff'}}>&nbsp;feat:&nbsp;&nbsp;&nbsp;&nbsp;A new feature</span>
+                  <span style={{color: '#00ff00'}}>
+&#63;
+                  </span>
+                  {' '}
+                  Select the type of change that you&apos;re committing:
+                  <span style={{color: '#00afff'}}>
+&nbsp;feat:&nbsp;&nbsp;&nbsp;&nbsp;A new feature
+                  </span>
                 </div>
                 <div>
-                  <span style={{color: '#00ff00'}}>&#63;</span> Denote the scope of this change ($location, $browser,
+                  <span style={{color: '#00ff00'}}>
+&#63;
+                  </span>
+                  {' '}
+                  Denote the scope of this change ($location, $browser,
                   $compile, etc.):
                 </div>
-                <div style={{color: '#00afff'}}>&nbsp;table-component</div>
+                <div style={{color: '#00afff'}}>
+                  &nbsp;table-component
+                </div>
                 <div>
-                  <span style={{color: '#00ff00'}}>&#63;</span> Write a short, imperative tense description of the
+                  <span style={{color: '#00ff00'}}>
+&#63;
+                  </span>
+                  {' '}
+                  Write a short, imperative tense description of the
                   change:
                 </div>
-                <div style={{color: '#00afff'}}>&nbsp;Add column sort</div>
-                <div><span style={{color: '#00ff00'}}>&#63;</span> Provide a longer description of the change:</div>
-                <div><Typist cursor={cursor}>&nbsp;Acending and decending sort orders were added</Typist></div>
+                <div style={{color: '#00afff'}}>
+                  &nbsp;Add column sort
+                </div>
+                <div>
+                  <span style={{color: '#00ff00'}}>
+&#63;
+                  </span>
+                  {' '}
+                  Provide a longer description of the change:
+                </div>
+                <div>
+                  <Typist cursor={cursor}>
+                    &nbsp;Acending and decending sort orders were added
+                  </Typist>
+                </div>
               </div>,
               <div key="fifth cz step">
-                <div>cz-cli@2.9.5, cz-conventional-changelog@2.0.0</div>
+                <div>
+                  cz-cli@2.9.5, cz-conventional-changelog@2.0.0
+                </div>
 
                 <div style={{padding: '40px 0 20px 0'}}>
                   Line 1 will be cropped at 100 characters. All other lines will be wrapped after 100 characters.
                 </div>
                 <div>
-                  <span style={{color: '#00ff00'}}>?</span> Select the type of change that you&apos;re committing:
-                  <span style={{color: '#00afff'}}>&nbsp;feat:&nbsp;&nbsp;&nbsp;&nbsp;A new feature</span>
+                  <span style={{color: '#00ff00'}}>
+?
+                  </span>
+                  {' '}
+                  Select the type of change that you&apos;re committing:
+                  <span style={{color: '#00afff'}}>
+&nbsp;feat:&nbsp;&nbsp;&nbsp;&nbsp;A new feature
+                  </span>
                 </div>
                 <div>
-                  <span style={{color: '#00ff00'}}>?</span> Denote the scope of this change ($location, $browser,
+                  <span style={{color: '#00ff00'}}>
+?
+                  </span>
+                  {' '}
+                  Denote the scope of this change ($location, $browser,
                   $compile, etc.):
                 </div>
-                <div style={{color: '#00afff'}}>&nbsp;table-component</div>
-                <div>
-                  <span style={{color: '#00ff00'}}>?</span> Write a short, imperative tense description of the change:
+                <div style={{color: '#00afff'}}>
+                  &nbsp;table-component
                 </div>
-                <div style={{color: '#00afff'}}>&nbsp;Add column sort</div>
-                <div><span style={{color: '#00ff00'}}>?</span> Provide a longer description of the change:</div>
-                <div>&nbsp;Acending and decending sort orders were added</div>
-                <div><span style={{color: '#00ff00'}}>?</span> List any breaking changes:</div>
-                <div><Typist cursor={cursor}>&nbsp;Adds a new required prop</Typist></div>
+                <div>
+                  <span style={{color: '#00ff00'}}>
+?
+                  </span>
+                  {' '}
+                  Write a short, imperative tense description of the change:
+                </div>
+                <div style={{color: '#00afff'}}>
+                  &nbsp;Add column sort
+                </div>
+                <div>
+                  <span style={{color: '#00ff00'}}>
+?
+                  </span>
+                  {' '}
+                  Provide a longer description of the change:
+                </div>
+                <div>
+                  &nbsp;Acending and decending sort orders were added
+                </div>
+                <div>
+                  <span style={{color: '#00ff00'}}>
+?
+                  </span>
+                  {' '}
+                  List any breaking changes:
+                </div>
+                <div>
+                  <Typist cursor={cursor}>
+                    &nbsp;Adds a new required prop
+                  </Typist>
+                </div>
               </div>,
               <div key="sixth cz step">
-                <div>cz-cli@2.9.5, cz-conventional-changelog@2.0.0</div>
+                <div>
+                  cz-cli@2.9.5, cz-conventional-changelog@2.0.0
+                </div>
 
                 <div style={{padding: '40px 0 20px 0'}}>
                   Line 1 will be cropped at 100 characters. All other lines will be wrapped after 100 characters.
                 </div>
                 <div>
-                  <span style={{color: '#00ff00'}}>&#63;</span> Select the type of change that you&apos;re committing:
-                  <span style={{color: '#00afff'}}>&nbsp;feat:&nbsp;&nbsp;&nbsp;&nbsp;A new feature</span>
+                  <span style={{color: '#00ff00'}}>
+&#63;
+                  </span>
+                  {' '}
+                  Select the type of change that you&apos;re committing:
+                  <span style={{color: '#00afff'}}>
+&nbsp;feat:&nbsp;&nbsp;&nbsp;&nbsp;A new feature
+                  </span>
                 </div>
                 <div>
-                  <span style={{color: '#00ff00'}}>?</span> Denote the scope of this change ($location, $browser,
+                  <span style={{color: '#00ff00'}}>
+?
+                  </span>
+                  {' '}
+                  Denote the scope of this change ($location, $browser,
                   $compile, etc.):
                 </div>
-                <div style={{color: '#00afff'}}>&nbsp;table-component</div>
-                <div>
-                  <span style={{color: '#00ff00'}}>?</span> Write a short, imperative tense description of the change:
+                <div style={{color: '#00afff'}}>
+                  &nbsp;table-component
                 </div>
-                <div style={{color: '#00afff'}}>&nbsp;Add column sort</div>
-                <div><span style={{color: '#00ff00'}}>?</span> Provide a longer description of the change:</div>
-                <div style={{color: '#00afff'}}>&nbsp;Acending and decending sort orders were added</div>
-                <div><span style={{color: '#00ff00'}}>?</span> List any breaking changes:</div>
-                <div style={{color: '#00afff'}}>&nbsp;Adds a new required prop</div>
-                <div><span style={{color: '#00ff00'}}>?</span> List any issues closed by this change:</div>
-                <div><Typist cursor={cursor}>&nbsp;closes #123</Typist></div>
+                <div>
+                  <span style={{color: '#00ff00'}}>
+?
+                  </span>
+                  {' '}
+                  Write a short, imperative tense description of the change:
+                </div>
+                <div style={{color: '#00afff'}}>
+                  &nbsp;Add column sort
+                </div>
+                <div>
+                  <span style={{color: '#00ff00'}}>
+?
+                  </span>
+                  {' '}
+                  Provide a longer description of the change:
+                </div>
+                <div style={{color: '#00afff'}}>
+                  &nbsp;Acending and decending sort orders were added
+                </div>
+                <div>
+                  <span style={{color: '#00ff00'}}>
+?
+                  </span>
+                  {' '}
+                  List any breaking changes:
+                </div>
+                <div style={{color: '#00afff'}}>
+                  &nbsp;Adds a new required prop
+                </div>
+                <div>
+                  <span style={{color: '#00ff00'}}>
+?
+                  </span>
+                  {' '}
+                  List any issues closed by this change:
+                </div>
+                <div>
+                  <Typist cursor={cursor}>
+                    &nbsp;closes #123
+                  </Typist>
+                </div>
               </div>,
               <div key="hack to prevent showing the last item too early" />
             ]
@@ -478,15 +853,19 @@ export default function Presentation() {
         ]}
       />
       <Slide transition={['slide']}>
-        <Heading size={1} fit>It&apos;s Easy to Forget to</Heading>
-        <Heading size={2} fit>Follow the Format</Heading>
+        <Heading size={1} fit>
+          It&apos;s Easy to Forget to
+        </Heading>
+        <Heading size={2} fit>
+          Follow the Format
+        </Heading>
       </Slide>
       <CodeSlide
         lang="json"
         code={require('../assets/package.npm.example')}
         ranges={[
           {
-            loc: [17, 18],
+            loc: [16, 17],
             note: 'husky can be used for more git hooks',
             title: 'husky'
           },
@@ -503,34 +882,57 @@ export default function Presentation() {
         ]}
       />
       <Slide transition={['slide']}>
-        <Heading size={1} caps fit>Commit Message Validation Failure</Heading>
+        <Heading size={1} caps fit>
+          Commit Message Validation Failure
+        </Heading>
         <Terminal
           title="~/development/gain/front-end/react-components @ Travi-MBP"
           output={[
-            <Typist cursor={cursor} key="bad commit">git commit -m &apos;foo&apos;</Typist>,
+            <Typist cursor={cursor} key="bad commit">
+              git commit -m &apos;foo&apos;
+            </Typist>,
             <div key="invalid commit warning">
-              <div>Now using node v7.4.0 (npm v4.0.5)</div>
+              <div>
+                Now using node v7.4.0 (npm v4.0.5)
+              </div>
               <div />
-              <div>&gt; husky - npm run -s commitmsg</div>
+              <div>
+                &gt; husky - npm run -s commitmsg
+              </div>
               <div />
-              <div>INVALID COMMIT MSG: does not match &quot;&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;&quot; !</div>
-              <div>foo</div>
+              <div>
+                INVALID COMMIT MSG: does not match &quot;&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;&quot; !
+              </div>
+              <div>
+                foo
+              </div>
               <div />
-              <div>&gt; husky - commit-msg hook failed (add --no-verify to bypass)</div>
-              <div>&gt; husky - to debug, use &apos;npm run commitmsg&apos;</div>
+              <div>
+                &gt; husky - commit-msg hook failed (add --no-verify to bypass)
+              </div>
+              <div>
+                &gt; husky - to debug, use &apos;npm run commitmsg&apos;
+              </div>
             </div>
           ]}
         />
       </Slide>
       <Slide transition={['slide']}>
-        <Heading size={1} fit>Start the commit message with <Code>WIP</Code> to skip validation</Heading>
+        <Heading size={1} fit>
+          Start the commit message with
+          <Code>
+            wip
+          </Code>
+          {' '}
+          to skip validation
+        </Heading>
       </Slide>
       <CodeSlide
         lang="yaml"
         code={require('../assets/travis.npm.example')}
         ranges={[
           {
-            loc: [1, 2],
+            loc: [1, 5],
             title: 'Publish',
             note: 'The semantic-release task bumps the version, publishes, and compiles release notes'
           }
@@ -542,32 +944,22 @@ export default function Presentation() {
         code={require('../assets/package.npm.example')}
         ranges={[
           {
-            loc: [13, 14],
-            note: 'The semantic-release task bumps the version, publishes, and compiles release notes',
-            title: 'Release'
-          },
-          {
-            loc: [11, 12],
-            title: 'Pre',
-            note: 'The pre task bumps the version based on the last release and the commit messages since'
-          },
-          {
-            loc: [20, 21],
+            loc: [19, 20],
             title: 'Version',
             note: 'Only defined to prevent a cli warning. It is overwritten by semantic-release before publishing'
           },
           {
             loc: [10, 11],
-            title: 'Pre-publish',
-            note: 'Any npm script can have a pre or post script. This script builds the bundled modules before publish'
+            title: 'Pre-pack',
+            note: 'Any npm script can have a pre or post script. This script builds the bundled modules before pack, ' +
+              'which happens before publish'
           },
           {loc: [7, 8], title: 'Rollup', note: 'Build bundles for distribution'},
           {
-            loc: [21, 23],
+            loc: [20, 22],
             title: 'Bundles',
             note: '`main` defines the common-js bundle. `module` defines the es module'
-          },
-          {loc: [12, 13], title: 'Post', note: 'The post task pushes the tag and release notes to GitHub'}
+          }
         ]}
       />
       <Slide bgColor="black" transition={['slide']}>
@@ -580,12 +972,26 @@ export default function Presentation() {
         <List textColor="white">
           <Appear>
             <ListItem>
-              <Code textColor="white">devDependencies</Code> are committed as <Code textColor="white">chore</Code>
+              <Code textColor="white">
+                devDependencies
+              </Code>
+              {' '}
+              are committed as
+              <Code textColor="white">
+                chore
+              </Code>
             </ListItem>
           </Appear>
           <Appear>
             <ListItem>
-              <Code textColor="white">dependencies</Code> are committed as <Code textColor="white">fix</Code>
+              <Code textColor="white">
+                dependencies
+              </Code>
+              {' '}
+              are committed as
+              <Code textColor="white">
+                fix
+              </Code>
             </ListItem>
           </Appear>
         </List>
@@ -599,10 +1005,20 @@ export default function Presentation() {
         <ImageSlide title="Cascade" image={images.cascade.replace('/', '')} />
       </Slide>
       <Slide bgColor="black" transition={['slide']}>
-        <Heading size={2} caps fit textColor="primary" textFont="primary">Caveats</Heading>
+        <Heading size={2} caps fit textColor="primary" textFont="primary">
+          Caveats
+        </Heading>
         <List textColor="white">
-          <Appear><ListItem>PRs for private packages only triggered by private npm</ListItem></Appear>
-          <Appear><ListItem>Other registries like Nexus or Artifactory are not supported</ListItem></Appear>
+          <Appear>
+            <ListItem>
+              PRs for private packages only triggered by private npm
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Other registries like Nexus or Artifactory are not supported
+            </ListItem>
+          </Appear>
         </List>
       </Slide>
       <Slide transition={['slide']}>
@@ -613,11 +1029,31 @@ export default function Presentation() {
           How can I dial this back&#63;
         </Heading>
         <List textColor="white">
-          <Appear><ListItem>Continuously deploy packages, but not the application</ListItem></Appear>
-          <Appear><ListItem>Consider starting with semantic-release</ListItem></Appear>
-          <Appear><ListItem>Introduce greenkeeper later</ListItem></Appear>
-          <Appear><ListItem>Consider the debt of opening PRs, but accepting later</ListItem></Appear>
-          <Appear><ListItem>greenkeeper-keeper instance before Greenkeeper</ListItem></Appear>
+          <Appear>
+            <ListItem>
+              Continuously deploy packages, but not the application
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Consider starting with semantic-release
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Introduce greenkeeper later
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Consider the debt of opening PRs, but accepting later
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              greenkeeper-keeper instance before Greenkeeper
+            </ListItem>
+          </Appear>
         </List>
       </Slide>
       <Slide transition={['slide']}>
@@ -628,9 +1064,21 @@ export default function Presentation() {
           Value has made investment in specific services worthwhile
         </Heading>
         <List textColor="white">
-          <Appear><ListItem>GitHub</ListItem></Appear>
-          <Appear><ListItem>Travis CI</ListItem></Appear>
-          <Appear><ListItem>Private npm</ListItem></Appear>
+          <Appear>
+            <ListItem>
+              GitHub
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Travis CI
+            </ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>
+              Private npm
+            </ListItem>
+          </Appear>
         </List>
       </Slide>
       <Slide bgColor="white">
@@ -645,7 +1093,9 @@ export default function Presentation() {
         />
         <List textColor="rgb(0,165,225)">
           <ListItem>
-            <Link textColor="rgb(0,165,225)" href="https://matt.travi.org">https://matt.travi.org</Link>
+            <Link textColor="rgb(0,165,225)" href="https://matt.travi.org">
+              https://matt.travi.org
+            </Link>
           </ListItem>
           <ListItem>
             <Link textColor="rgb(0,165,225)" href="https://presentations.travi.org">
@@ -653,7 +1103,9 @@ export default function Presentation() {
             </Link>
           </ListItem>
           <ListItem>
-            <Link textColor="rgb(0,165,225)" href="https://gaincompliance.com">https://gaincompliance.com</Link>
+            <Link textColor="rgb(0,165,225)" href="https://gaincompliance.com">
+              https://gaincompliance.com
+            </Link>
           </ListItem>
         </List>
       </Slide>

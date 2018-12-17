@@ -110,7 +110,8 @@ export default function (env) {
       new HtmlWebpackPlugin({
         chunks: [...defaultChunks, 'index'],
         filename: 'index.html',
-        template: 'src/index.mustache'
+        template: 'src/index.mustache',
+        title: 'Continuous Deployment'
       })
     ])
   };
