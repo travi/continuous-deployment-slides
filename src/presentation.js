@@ -4,7 +4,6 @@ import {Appear, Code, Deck, Heading, Image, Link, List, ListItem, Slide, Text} f
 import Terminal from 'spectacle-terminal';
 import Typist from 'react-typist';
 import CodeSlide from 'spectacle-code-slide';
-import ImageSlide from 'spectacle-image-slide';
 import preloader from 'spectacle/lib/utils/preloader';
 import 'normalize.css';
 import 'spectacle/lib/themes/default/index.css';
@@ -267,10 +266,16 @@ export default function Presentation() {
         </List>
       </Slide>
       <Slide bgColor="white">
-        <ImageSlide title="Greenkeeper sends a PR" image={images.pr.replace('/', '')} />
+        <Heading size={2} caps fit textFont="primary">
+          Greenkeeper sends a PR
+        </Heading>
+        <Image src={images.pr.replace('/', '')} />
       </Slide>
       <Slide bgColor="white">
-        <ImageSlide title="All Commit Checks Passed" image={images.checksPassed.replace('/', '')} />
+        <Heading size={2} caps fit textFont="primary">
+          All Commit Checks Passed
+        </Heading>
+        <Image src={images.checksPassed.replace('/', '')} />
       </Slide>
       <Slide bgColor="white" transition={['slide']}>
         <Heading size={2} fit textColor="primary" textFont="primary">
@@ -281,7 +286,10 @@ export default function Presentation() {
         </Heading>
       </Slide>
       <Slide bgColor="white">
-        <ImageSlide title="A common day of PRs" image={images.lotsOfPrs.replace('/', '')} />
+        <Heading size={2} caps fit textFont="primary">
+          A common day of PRs
+        </Heading>
+        <Image src={images.lotsOfPrs.replace('/', '')} />
       </Slide>
       <Slide bgColor="black" transition={['slide']}>
         <Heading size={2} caps fit textColor="primary" textFont="primary">
@@ -321,10 +329,10 @@ export default function Presentation() {
         </List>
       </Slide>
       <Slide bgColor="white">
-        <ImageSlide
-          title="greenkeeper-keeper will only merge if all checks pass"
-          image={images.checksFailed.replace('/', '')}
-        />
+        <Heading size={2} caps fit textFont="primary">
+          greenkeeper-keeper will only merge if all checks pass
+        </Heading>
+        <Image src={images.checksFailed.replace('/', '')} />
       </Slide>
       <Slide bgColor="black" transition={['slide']}>
         <Heading size={2} caps fit textColor="primary" textFont="primary">
@@ -1001,7 +1009,10 @@ export default function Presentation() {
         </Heading>
       </Slide>
       <Slide bgColor="white">
-        <ImageSlide title="Cascade" image={images.cascade.replace('/', '')} />
+        <Heading size={2} caps fit textFont="primary">
+          Cascade
+        </Heading>
+        <Image src={images.cascade.replace('/', '')} />
       </Slide>
       <Slide bgColor="black" transition={['slide']}>
         <Heading size={2} caps fit textColor="primary" textFont="primary">
