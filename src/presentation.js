@@ -475,7 +475,6 @@ export default function Presentation() {
             <ListItem>
               <Code textColor="white">
                 BREAKING CHANGE:
-                {' '}
               </Code>
             </ListItem>
           </Appear>
