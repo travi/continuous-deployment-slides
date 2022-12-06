@@ -62,7 +62,7 @@
     "img-loader": "3.0.1",
     "jsdom": "16.5.0",
     "lodash-webpack-plugin": "0.11.5",
-    "mocha": "5.2.0",
+    "mocha": "10.1.0",
     "mq-polyfill": "1.1.8",
     "mustache-loader": "1.4.1",
     "netlify-cli": "2.6.0",
